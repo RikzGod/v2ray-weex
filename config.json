@@ -1,0 +1,27 @@
+{
+  "inbounds": [{
+    "port": 8080,
+    "listen": "0.0.0.0",
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "11111111-1111-1111-1111-111111111111",
+          "alterId": 0
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+        "path": "/websocket"
+      }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom"
+  }],
+  "dns": {
+    "servers": ["8.8.8.8", "8.8.4.4"]
+  }
+}
